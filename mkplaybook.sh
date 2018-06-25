@@ -54,10 +54,10 @@ install_basic()
     local basic=(python python-pip ansible)
     for package in ${basic[@]}
     do
-        if [[ x$(which ${!package}) = x ]]
+        if [[ x$(which ${package#*-}) = x ]]
         then
-            info "Installing package ${!package}"
-            $CMD install ${!package} -y
+            info "Installing package ${package}"
+            $CMD install ${package} -y
         fi
     done
 }
