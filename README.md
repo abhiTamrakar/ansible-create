@@ -25,9 +25,8 @@ This is an ansible playbook that helps creating a playbook and its directory str
 |  |  tasks |
 |  |  meta |
 |  |  handlers |
-# define extra role and include a default one
-extras:
- * common
+| extras | common | 
+>extras is defined for roles.
 
 #### To create an ansible playbook with some name and few roles
 `
