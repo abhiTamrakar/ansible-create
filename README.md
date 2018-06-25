@@ -3,15 +3,15 @@ This is an ansible playbook that helps creating a playbook and its directory str
 
 ### usage
 #### To create an ansible playbook with some name and few roles
-'''
+`
 ansible-playbook ansible-create.yml -e 'playbook_path=/tmp/app' -e '{"extras": [databases, application, monitoring]}'
-'''
+`
 
 #### To create an ansible playbook with defaults.
-ansible-playbook ansible-create.yml
+`ansible-playbook ansible-create.yml`
 
 #### The default directory structure
-'''
+```
 /home/tamrakar/default/
 ├── defaults
 ├── files
@@ -27,4 +27,4 @@ ansible-playbook ansible-create.yml
 │       ├── tasks
 │       └── templates
 └── templates
-'''
+```
