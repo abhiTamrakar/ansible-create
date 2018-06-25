@@ -61,7 +61,7 @@ ansible-playbook create.yml -e 'playbook_path=/tmp/app' -e '{"extras": [database
 
         -h|--help           print this usage and exit
         -d|--dir            playbook dir (default current directory)
-        -p|--playbook-path  destination path for new playbook with name (default is /home/tamrakar/myplaybook)
+        -p|--playbook-path  destination path for new playbook with name (default is $HOME/myplaybook)
         -r|--roles          additional role directories to create (comma separated)
         -c|--copy-default   copy default files (main.yml)
 
